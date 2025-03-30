@@ -1,0 +1,26 @@
+html.custom-motif.grey {
+	background-color: hsl(0,0%,88%);
+	color: black;
+}
+/* html.custom-motif.grey > body > nav,
+html.custom-motif.grey > body > main > article {
+	border: 1px solid black;
+} */
+html.custom-motif.grey > body  > nav {
+	background-color: hsl(0,0%,98%);
+}
+html.custom-motif.grey > body  > main {
+	background-color: hsl(0,0%,98%);
+}
+html.custom-motif.grey > body > nav a:hover {
+	background-color: hsl(0,0%,90%);
+}
+html.custom-motif.grey > body > nav a:active {
+	background-color: hsl(350,100%,95%);
+}
+html.custom-motif.grey > body > main > article > nav a:hover {
+	background-color: hsl(0,0%,90%);
+}
+html.custom-motif.grey > body > main > article > nav a:active {
+	background-color: hsl(350,100%,95%);
+}
