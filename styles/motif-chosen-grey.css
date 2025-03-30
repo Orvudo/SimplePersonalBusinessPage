@@ -6,16 +6,20 @@ html.custom-motif.grey {
 html.custom-motif.grey > body > main > article {
 	border: 1px solid black;
 } */
-html.custom-motif.grey > body  > nav {
-	background-color: hsl(0,0%,98%);
+html.custom-motif.grey > body > nav,
+html.custom-motif.grey > body > main,
+html.custom-motif.grey > body > dialog
+{
+	background-color: hsl(0,0%,93%);
 }
-html.custom-motif.grey > body  > main {
-	background-color: hsl(0,0%,98%);
-}
-html.custom-motif.grey > body > nav a:hover {
+html.custom-motif.grey > body > nav a:hover
+html.custom-motif.grey > body > dialog button:hover
+{
 	background-color: hsl(0,0%,90%);
 }
-html.custom-motif.grey > body > nav a:active {
+html.custom-motif.grey > body > nav a:active,
+html.custom-motif.grey > body > dialog button:active
+{
 	background-color: hsl(350,100%,95%);
 }
 html.custom-motif.grey > body > main > article > nav a:hover {

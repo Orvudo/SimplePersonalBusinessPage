@@ -176,12 +176,16 @@ body > nav a:link,
 body > nav a[onclick] {
 	cursor: pointer;
 }
-/* nav link border pop */
-html > body > nav a:hover {
+/* nav link and button border pop */
+html > body > nav a:hover,
+html > body > dialog:open button:hover
+{
 	margin: calc(0.25em - 2px);
 	padding: calc(0.75em + 2px);
 }
-html > body > nav a:active {
+html > body > nav a:active,
+html > body > dialog:open button:active
+{
 	margin: calc(0.25em + 2px);
 	padding: calc(0.75em - 2px);
 }
@@ -229,6 +233,35 @@ h2, h3, h4, h5, h6 {
 
 html > body > dialog::backdrop {
 	background: hsla(0, 0%, 0%, 0.5);
-	background-image: url("../gfx/backdrop.svg");
+	background: url("../gfx/backdrop.svg");
 	background-size: 16px;
+}
+html > body > dialog:open {
+	color: inherit;
+	margin: auto;
+	width: min(30em, 100vw - 2em);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/* gap: 1em; */
+}
+html > body > dialog > header {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+html > body > dialog > section {
+	display: flex;
+	flex-direction: column;
+	padding: 0.75em;
+	margin: 0.25em;
+}
+html > body > dialog button {
+	font: inherit;
+	color: inherit;
+	margin: 0.25em;
+	padding: 0.75em;
+	border: 2px solid currentcolor;
+	background: transparent;
 }
